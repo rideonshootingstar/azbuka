@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{826A4B6B-8A60-4313-97EA-FE43077DCC27}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WpfApp1</RootNamespace>
+    <AssemblyName>WpfApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Alfavit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HelloPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Alfavit.xaml.cs">
+      <DependentUpon>Alfavit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HelloPage.xaml.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\BukvaA.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaB.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaCe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaCh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaE.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaEa.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaEe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaF.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaG.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaIi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaIy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaJ.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaK.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaL.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaM.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaMz.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaO.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaP.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaR.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaSch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaSh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaT.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaTz.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaU.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaV.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaX.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaYa.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaYu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\BukvaZ.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pages\BukvaA.xaml.cs" />
+    <Compile Include="Pages\BukvaB.xaml.cs" />
+    <Compile Include="Pages\BukvaCe.xaml.cs" />
+    <Compile Include="Pages\BukvaCh.xaml.cs" />
+    <Compile Include="Pages\BukvaD.xaml.cs" />
+    <Compile Include="Pages\BukvaE.xaml.cs" />
+    <Compile Include="Pages\BukvaEa.xaml.cs" />
+    <Compile Include="Pages\BukvaEe.xaml.cs" />
+    <Compile Include="Pages\BukvaF.xaml.cs" />
+    <Compile Include="Pages\BukvaG.xaml.cs" />
+    <Compile Include="Pages\BukvaI.xaml.cs" />
+    <Compile Include="Pages\BukvaIi.xaml.cs" />
+    <Compile Include="Pages\BukvaIy.xaml.cs" />
+    <Compile Include="Pages\BukvaJ.xaml.cs" />
+    <Compile Include="Pages\BukvaK.xaml.cs" />
+    <Compile Include="Pages\BukvaL.xaml.cs" />
+    <Compile Include="Pages\BukvaM.xaml.cs" />
+    <Compile Include="Pages\BukvaMz.xaml.cs" />
+    <Compile Include="Pages\BukvaN.xaml.cs" />
+    <Compile Include="Pages\BukvaO.xaml.cs" />
+    <Compile Include="Pages\BukvaP.xaml.cs" />
+    <Compile Include="Pages\BukvaR.xaml.cs" />
+    <Compile Include="Pages\BukvaS.xaml.cs" />
+    <Compile Include="Pages\BukvaSch.xaml.cs" />
+    <Compile Include="Pages\BukvaSh.xaml.cs" />
+    <Compile Include="Pages\BukvaT.xaml.cs" />
+    <Compile Include="Pages\BukvaTz.xaml.cs" />
+    <Compile Include="Pages\BukvaU.xaml.cs" />
+    <Compile Include="Pages\BukvaV.xaml.cs" />
+    <Compile Include="Pages\BukvaX.xaml.cs" />
+    <Compile Include="Pages\BukvaYa.xaml.cs" />
+    <Compile Include="Pages\BukvaYu.xaml.cs" />
+    <Compile Include="Pages\BukvaZ.xaml.cs" />
+    <Compile Include="Pages\MainPage.xaml.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\a.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\b.png" />
+    <Resource Include="pic\bl.png" />
+    <Resource Include="pic\c.png" />
+    <Resource Include="pic\cc.png" />
+    <Resource Include="pic\ch.png" />
+    <Resource Include="pic\d.png" />
+    <Resource Include="pic\e.png" />
+    <Resource Include="pic\ee.png" />
+    <Resource Include="pic\eee.png" />
+    <Resource Include="pic\f.png" />
+    <Resource Include="pic\g.png" />
+    <Resource Include="pic\h.png" />
+    <Resource Include="pic\i.png" />
+    <Resource Include="pic\ii.png" />
+    <Resource Include="pic\j.png" />
+    <Resource Include="pic\k.png" />
+    <Resource Include="pic\l.png" />
+    <Resource Include="pic\m.png" />
+    <Resource Include="pic\mya.png" />
+    <Resource Include="pic\o.png" />
+    <Resource Include="pic\p.png" />
+    <Resource Include="pic\r.png" />
+    <Resource Include="pic\sh.png" />
+    <Resource Include="pic\shh.png" />
+    <Resource Include="pic\t.png" />
+    <Resource Include="pic\tv.png" />
+    <Resource Include="pic\u.png" />
+    <Resource Include="pic\v.png" />
+    <Resource Include="pic\x.png" />
+    <Resource Include="pic\ya.png" />
+    <Resource Include="pic\yu.png" />
+    <Resource Include="pic\z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="info\а.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\gamepad.png" />
+    <Resource Include="icons\info.png" />
+    <Resource Include="icons\sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="info\б.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="info\ё.png" />
+    <Resource Include="info\в.png" />
+    <Resource Include="info\г.png" />
+    <Resource Include="info\д.png" />
+    <Resource Include="info\е.png" />
+    <Resource Include="info\ж.png" />
+    <Resource Include="info\з.png" />
+    <Resource Include="info\и.png" />
+    <Resource Include="info\й.png" />
+    <Resource Include="info\к.png" />
+    <Resource Include="info\л.png" />
+    <Resource Include="info\м.png" />
+    <Resource Include="info\н.png" />
+    <Resource Include="info\о.png" />
+    <Resource Include="info\п.png" />
+    <Resource Include="info\р.png" />
+    <Resource Include="info\с.png" />
+    <Resource Include="info\т.png" />
+    <Resource Include="info\у.png" />
+    <Resource Include="info\ф.png" />
+    <Resource Include="info\х.png" />
+    <Resource Include="info\ц.png" />
+    <Resource Include="info\ч.png" />
+    <Resource Include="info\ш.png" />
+    <Resource Include="info\щ.png" />
+    <Resource Include="info\ъ.png" />
+    <Resource Include="info\ы.png" />
+    <Resource Include="info\ь.png" />
+    <Resource Include="info\э.png" />
+    <Resource Include="info\ю.png" />
+    <Resource Include="info\я.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cards\banan.png" />
+    <Resource Include="Cards\caplya.png" />
+    <Resource Include="Cards\chai.png" />
+    <Resource Include="Cards\devochka.png" />
+    <Resource Include="Cards\elka.png" />
+    <Resource Include="Cards\enot.png" />
+    <Resource Include="Cards\eskimo.png" />
+    <Resource Include="Cards\faraon.png" />
+    <Resource Include="Cards\gorox.png" />
+    <Resource Include="Cards\ikona.png" />
+    <Resource Include="Cards\ioga.png" />
+    <Resource Include="Cards\jiraf.png" />
+    <Resource Include="Cards\kot.png" />
+    <Resource Include="Cards\lyagushka.png" />
+    <Resource Include="Cards\myach.png" />
+    <Resource Include="Cards\nosorog.png" />
+    <Resource Include="Cards\ogurec.png" />
+    <Resource Include="Cards\panda.png" />
+    <Resource Include="Cards\roza.png" />
+    <Resource Include="Cards\shenok.png" />
+    <Resource Include="Cards\shpric.png" />
+    <Resource Include="Cards\snegovik.png" />
+    <Resource Include="Cards\tort.png" />
+    <Resource Include="Cards\utka.png" />
+    <Resource Include="Cards\volk.png" />
+    <Resource Include="Cards\xleb.png" />
+    <Resource Include="Cards\yaytso.png" />
+    <Resource Include="Cards\yula.png" />
+    <Resource Include="Cards\zayac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cards\arbuz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Cards\Iy.png" />
+    <Resource Include="Cards\Mz.png" />
+    <Resource Include="Cards\Tz.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

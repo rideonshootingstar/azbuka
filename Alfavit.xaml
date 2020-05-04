@@ -1,0 +1,547 @@
+﻿<Page x:Class="WpfApp1.Alfavit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="800"
+      Title="Alfavit">
+
+    <Grid>
+        <!--Алфавит-->
+        <Grid>
+            <Image Name="imgA" Source="pic/a.png" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgA_MouseEnter" MouseLeave="imgA_MouseLeave"/>
+            <Image Name="imgB" Source="pic/b.png" HorizontalAlignment="Left" Margin="115,10,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgB_MouseEnter" MouseLeave="imgB_MouseLeave"/>
+            <Image Name="imgV" Source="pic/v.png" HorizontalAlignment="Left" Margin="220,10,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgV_MouseEnter" MouseLeave="imgV_MouseLeave"/>
+            <Image Name="imgG" Source="pic/g.png" HorizontalAlignment="Left" Margin="325,10,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgG_MouseEnter" MouseLeave="imgG_MouseLeave"/>
+            <Image Name="imgD" Source="pic/d.png" HorizontalAlignment="Left" Margin="430,10,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgD_MouseEnter" MouseLeave="imgD_MouseLeave"/>
+            <Image Name="imgE" Source="pic/e.png" HorizontalAlignment="Left" Margin="535,10,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgE_MouseEnter" MouseLeave="imgE_MouseLeave"/>
+            <Image Name="imgEE" Source="pic/ee.png" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgEE_MouseEnter" MouseLeave="imgEE_MouseLeave"/>
+            <Image Name="imgJ" Source="pic/j.png" HorizontalAlignment="Left" Margin="115,115,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgJ_MouseEnter" MouseLeave="imgJ_MouseLeave"/>
+            <Image Name="imgZ" Source="pic/z.png" HorizontalAlignment="Left" Margin="220,115,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgZ_MouseEnter" MouseLeave="imgZ_MouseLeave"/>
+            <Image Name="imgI" Source="pic/i.png" HorizontalAlignment="Left" Margin="325,115,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgI_MouseEnter" MouseLeave="imgI_MouseLeave"/>
+            <Image Name="imgII" Source="pic/ii.png" HorizontalAlignment="Left" Margin="430,115,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgII_MouseEnter" MouseLeave="imgII_MouseLeave"/>
+            <Image Name="imgK" Source="pic/k.png" HorizontalAlignment="Left" Margin="535,115,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgK_MouseEnter" MouseLeave="imgK_MouseLeave"/>
+            <Image Name="imgL" Source="pic/l.png" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgL_MouseEnter" MouseLeave="imgL_MouseLeave"/>
+            <Image Name="imgM" Source="pic/m.png" HorizontalAlignment="Left" Margin="115,220,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgM_MouseEnter" MouseLeave="imgM_MouseLeave"/>
+            <Image Name="imgH" Source="pic/h.png" HorizontalAlignment="Left" Margin="220,220,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgH_MouseEnter" MouseLeave="imgH_MouseLeave"/>
+            <Image Name="imgO" Source="pic/o.png" HorizontalAlignment="Left" Margin="325,220,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgO_MouseEnter" MouseLeave="imgO_MouseLeave"/>
+            <Image Name="imgP" Source="pic/p.png" HorizontalAlignment="Left" Margin="430,220,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgP_MouseEnter" MouseLeave="imgP_MouseLeave"/>
+            <Image Name="imgR" Source="pic/r.png" HorizontalAlignment="Left" Margin="535,220,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgR_MouseEnter" MouseLeave="imgR_MouseLeave"/>
+            <Image Name="imgC" Source="pic/c.png" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgC_MouseEnter" MouseLeave="imgC_MouseLeave"/>
+            <Image Name="imgT" Source="pic/t.png" HorizontalAlignment="Left" Margin="115,325,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgT_MouseEnter" MouseLeave="imgT_MouseLeave"/>
+            <Image Name="imgU" Source="pic/u.png" HorizontalAlignment="Left" Margin="220,325,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgU_MouseEnter" MouseLeave="imgU_MouseLeave"/>
+            <Image Name="imgF" Source="pic/f.png" HorizontalAlignment="Left" Margin="325,325,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgF_MouseEnter" MouseLeave="imgF_MouseLeave"/>
+            <Image Name="imgX" Source="pic/x.png" HorizontalAlignment="Left" Margin="430,325,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgX_MouseEnter" MouseLeave="imgX_MouseLeave"/>
+            <Image Name="imgCC" Source="pic/cc.png" HorizontalAlignment="Left" Margin="535,325,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgCC_MouseEnter" MouseLeave="imgCC_MouseLeave"/>
+            <Image Name="imgCH" Source="pic/ch.png" HorizontalAlignment="Left" Margin="10,430,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgCH_MouseEnter" MouseLeave="imgCH_MouseLeave"/>
+            <Image Name="imgSH" Source="pic/sh.png" HorizontalAlignment="Left" Margin="115,430,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgSH_MouseEnter" MouseLeave="imgSH_MouseLeave"/>
+            <Image Name="imgSHH" Source="pic/shh.png" HorizontalAlignment="Left" Margin="220,430,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgSHH_MouseEnter" MouseLeave="imgSHH_MouseLeave"/>
+            <Image Name="imgTV" Source="pic/tv.png" HorizontalAlignment="Left" Margin="325,430,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgTV_MouseEnter" MouseLeave="imgTV_MouseLeave"/>
+            <Image Name="imgBL" Source="pic/bl.png" HorizontalAlignment="Left" Margin="430,430,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgBL_MouseEnter" MouseLeave="imgBL_MouseLeave"/>
+            <Image Name="imgMYA" Source="pic/mya.png" HorizontalAlignment="Left" Margin="535,430,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgMYA_MouseEnter" MouseLeave="imgMYA_MouseLeave"/>
+            <Image Name="imgEEE" Source="pic/eee.png" HorizontalAlignment="Left" Margin="10,535,0,0" VerticalAlignment="Top" Width="100" Height="100"  MouseEnter="imgEEE_MouseEnter" MouseLeave="imgEEE_MouseLeave"/>
+            <Image Name="imgYU" Source="pic/yu.png" HorizontalAlignment="Left" Margin="115,535,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgYU_MouseEnter" MouseLeave="imgYU_MouseLeave"/>
+            <Image Name="imgYA" Source="pic/ya.png" HorizontalAlignment="Left" Margin="220,535,0,0" VerticalAlignment="Top" Width="100" Height="100" MouseEnter="imgYA_MouseEnter" MouseLeave="imgYA_MouseLeave"/>
+            <TextBlock Name="TextBlockName" HorizontalAlignment="Left" Margin="10,650,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Foreground="#FFFF0080" FontSize="36"/>
+            <Button Name="AboutButton" Content="О программе" HorizontalAlignment="Left" Margin="655,10,0,0" VerticalAlignment="Top" Width="110" Height="35" FontSize="16" Click="AboutButton_Click"/>
+            <Button Name="ButtonClose" Content="Закрыть" HorizontalAlignment="Left" Margin="655,70,0,0" VerticalAlignment="Top" Width="110" Height="35" FontSize="16" Click="ButtonClose_Click"/>
+        </Grid>
+        <!--Буква А-->
+        <Button Name="btn1A" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1A_MouseEnter" MouseLeave="btn1A_MouseLeave" Visibility="Hidden" Click="btn1A_Click">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2A" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2A_MouseEnter" MouseLeave="btn2A_MouseLeave" Visibility="Hidden" Click="btn2A_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3A" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3A_MouseEnter" MouseLeave="btn3A_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/а.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Б-->
+        <Button  Name="btn1B" HorizontalAlignment="Left" Margin="115,75,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1B_MouseEnter" MouseLeave="btn1B_MouseLeave" Visibility="Hidden" Click="btn1B_Click">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2B" HorizontalAlignment="Left" Margin="115,10,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2B_MouseEnter" MouseLeave="btn2B_MouseLeave" Visibility="Hidden" Click="btn2B_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3B" HorizontalAlignment="Left" Margin="165,10,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3B_MouseEnter" MouseLeave="btn3B_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/б.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква В-->
+        <Button Name="btn1V" Click="btn1V_Click" HorizontalAlignment="Left" Margin="220,75,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1V_MouseEnter" MouseLeave="btn1V_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2V" HorizontalAlignment="Left" Margin="220,10,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2V_MouseEnter" MouseLeave="btn2V_MouseLeave" Visibility="Hidden" Click="btn2V_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3V" HorizontalAlignment="Left" Margin="270,10,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3V_MouseEnter" MouseLeave="btn3V_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/в.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Г-->
+        <Button Click="btn1G_Click" Name="btn1G" HorizontalAlignment="Left" Margin="325,75,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1G_MouseEnter" MouseLeave="btn1G_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2G" HorizontalAlignment="Left" Margin="325,10,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2G_MouseEnter" MouseLeave="btn2G_MouseLeave" Visibility="Hidden" Click="btn2G_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3G" HorizontalAlignment="Left" Margin="375,10,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3G_MouseEnter" MouseLeave="btn3G_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/г.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Д-->
+        <Button Click="btn1D_Click" Name="btn1D" HorizontalAlignment="Left" Margin="430,75,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1D_MouseEnter" MouseLeave="btn1D_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2D" HorizontalAlignment="Left" Margin="430,10,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2D_MouseEnter" MouseLeave="btn2D_MouseLeave" Visibility="Hidden" Click="btn2D_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3D" HorizontalAlignment="Left" Margin="480,10,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3D_MouseEnter" MouseLeave="btn3D_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/д.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Е-->
+        <Button Click="btn1E_Click" Name="btn1E" HorizontalAlignment="Left" Margin="535,75,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1E_MouseEnter" MouseLeave="btn1E_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2E" HorizontalAlignment="Left" Margin="535,10,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2E_MouseEnter" MouseLeave="btn2E_MouseLeave" Visibility="Hidden" Click="btn2E_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3E" HorizontalAlignment="Left" Margin="585,10,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3E_MouseEnter" MouseLeave="btn3E_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/е.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Ё-->
+        <Button Click="btn1EE_Click" Name="btn1EE" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1EE_MouseEnter" MouseLeave="btn1EE_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2EE" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2EE_MouseEnter" MouseLeave="btn2EE_MouseLeave" Visibility="Hidden" Click="btn2EE_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3EE" HorizontalAlignment="Left" Margin="60,115,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3EE_MouseEnter" MouseLeave="btn3EE_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/ё.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Ж-->
+        <Button Click="btn1J_Click" Name="btn1J" HorizontalAlignment="Left" Margin="115,180,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1J_MouseEnter" MouseLeave="btn1J_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2J" HorizontalAlignment="Left" Margin="115,115,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2J_MouseEnter" MouseLeave="btn2J_MouseLeave" Visibility="Hidden" Click="btn2J_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3J" HorizontalAlignment="Left" Margin="165,115,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3J_MouseEnter" MouseLeave="btn3J_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/ж.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква З-->
+        <Button Click="btn1Z_Click" Name="btn1Z" HorizontalAlignment="Left" Margin="220,180,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1Z_MouseEnter" MouseLeave="btn1Z_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2Z" HorizontalAlignment="Left" Margin="220,115,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2Z_MouseEnter" MouseLeave="btn2Z_MouseLeave" Visibility="Hidden" Click="btn2Z_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3Z" HorizontalAlignment="Left" Margin="270,115,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3Z_MouseEnter" MouseLeave="btn3Z_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/з.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква И-->
+        <Button Click="btn1I_Click" Name="btn1I" HorizontalAlignment="Left" Margin="325,180,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1I_MouseEnter" MouseLeave="btn1I_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2I" HorizontalAlignment="Left" Margin="325,115,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2I_MouseEnter" MouseLeave="btn2I_MouseLeave" Visibility="Hidden" Click="btn2I_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3I" HorizontalAlignment="Left" Margin="375,115,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3I_MouseEnter" MouseLeave="btn3I_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/и.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Й-->
+        <Button Click="btn1II_Click" Name="btn1II" HorizontalAlignment="Left" Margin="430,180,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1II_MouseEnter" MouseLeave="btn1II_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2II" HorizontalAlignment="Left" Margin="430,115,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2II_MouseEnter" MouseLeave="btn2II_MouseLeave" Visibility="Hidden" Click="btn2II_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3II" HorizontalAlignment="Left" Margin="480,115,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3II_MouseEnter" MouseLeave="btn3II_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/й.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква К-->
+        <Button Click="btn1K_Click" Name="btn1K" HorizontalAlignment="Left" Margin="535,180,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1K_MouseEnter" MouseLeave="btn1K_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2K" HorizontalAlignment="Left" Margin="535,115,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2K_MouseEnter" MouseLeave="btn2K_MouseLeave" Visibility="Hidden" Click="btn2K_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3K" HorizontalAlignment="Left" Margin="585,115,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3K_MouseEnter" MouseLeave="btn3K_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/к.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Л-->
+        <Button Click="btn1L_Click" Name="btn1L" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1L_MouseEnter" MouseLeave="btn1L_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2L" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2L_MouseEnter" MouseLeave="btn2L_MouseLeave" Visibility="Hidden" Click="btn2L_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3L" HorizontalAlignment="Left" Margin="60,220,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3L_MouseEnter" MouseLeave="btn3L_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/л.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква М-->
+        <Button Click="btn1M_Click" Name="btn1M" HorizontalAlignment="Left" Margin="115,285,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1M_MouseEnter" MouseLeave="btn1M_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2M" HorizontalAlignment="Left" Margin="115,220,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2M_MouseEnter" MouseLeave="btn2M_MouseLeave" Visibility="Hidden" Click="btn2M_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3M" HorizontalAlignment="Left" Margin="165,220,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3M_MouseEnter" MouseLeave="btn3M_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/м.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Н-->
+        <Button Click="btn1H_Click" Name="btn1H" HorizontalAlignment="Left" Margin="220,285,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1H_MouseEnter" MouseLeave="btn1H_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2H" HorizontalAlignment="Left" Margin="220,220,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2H_MouseEnter" MouseLeave="btn2H_MouseLeave" Visibility="Hidden" Click="btn2H_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3H" HorizontalAlignment="Left" Margin="270,220,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3H_MouseEnter" MouseLeave="btn3H_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/н.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква О-->
+        <Button Click="btn1O_Click" Name="btn1O" HorizontalAlignment="Left" Margin="325,285,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1O_MouseEnter" MouseLeave="btn1O_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2O" HorizontalAlignment="Left" Margin="325,220,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2O_MouseEnter" MouseLeave="btn2O_MouseLeave" Visibility="Hidden" Click="btn2O_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3O" HorizontalAlignment="Left" Margin="375,220,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3O_MouseEnter" MouseLeave="btn3O_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/о.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква П-->
+        <Button Click="btn1P_Click" Name="btn1P" HorizontalAlignment="Left" Margin="430,285,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1P_MouseEnter" MouseLeave="btn1P_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2P" HorizontalAlignment="Left" Margin="430,220,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2P_MouseEnter" MouseLeave="btn2P_MouseLeave" Visibility="Hidden" Click="btn2P_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3P" HorizontalAlignment="Left" Margin="480,220,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3P_MouseEnter" MouseLeave="btn3P_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/п.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Р-->
+        <Button Click="btn1R_Click" Name="btn1R" HorizontalAlignment="Left" Margin="535,285,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1R_MouseEnter" MouseLeave="btn1R_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2R" HorizontalAlignment="Left" Margin="535,220,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2R_MouseEnter" MouseLeave="btn2R_MouseLeave" Visibility="Hidden" Click="btn2R_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3R" HorizontalAlignment="Left" Margin="585,220,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3R_MouseEnter" MouseLeave="btn3R_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/р.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква С-->
+        <Button Click="btn1C_Click" Name="btn1C" HorizontalAlignment="Left" Margin="10,390,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1C_MouseEnter" MouseLeave="btn1C_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2C" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2C_MouseEnter" MouseLeave="btn2C_MouseLeave" Visibility="Hidden" Click="btn2C_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3C" HorizontalAlignment="Left" Margin="60,325,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3C_MouseEnter" MouseLeave="btn3C_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/с.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Т-->
+        <Button Click="btn1T_Click" Name="btn1T" HorizontalAlignment="Left" Margin="115,390,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1T_MouseEnter" MouseLeave="btn1T_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2T" HorizontalAlignment="Left" Margin="115,325,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2T_MouseEnter" MouseLeave="btn2T_MouseLeave" Visibility="Hidden" Click="btn2T_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3T" HorizontalAlignment="Left" Margin="165,325,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3T_MouseEnter" MouseLeave="btn3T_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/т.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква У-->
+        <Button Click="btn1U_Click" Name="btn1U" HorizontalAlignment="Left" Margin="220,390,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1U_MouseEnter" MouseLeave="btn1U_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2U" HorizontalAlignment="Left" Margin="220,325,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2U_MouseEnter" MouseLeave="btn2U_MouseLeave" Visibility="Hidden" Click="btn2U_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3U" HorizontalAlignment="Left" Margin="270,325,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3U_MouseEnter" MouseLeave="btn3U_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/у.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Ф-->
+        <Button Click="btn1F_Click" Name="btn1F" HorizontalAlignment="Left" Margin="325,390,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1F_MouseEnter" MouseLeave="btn1F_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2F" HorizontalAlignment="Left" Margin="325,325,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2F_MouseEnter" MouseLeave="btn2F_MouseLeave" Visibility="Hidden" Click="btn2F_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3F" HorizontalAlignment="Left" Margin="375,325,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3F_MouseEnter" MouseLeave="btn3F_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/ф.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Х-->
+        <Button Click="btn1X_Click" Name="btn1X" HorizontalAlignment="Left" Margin="430,390,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1X_MouseEnter" MouseLeave="btn1X_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2X" HorizontalAlignment="Left" Margin="430,325,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2X_MouseEnter" MouseLeave="btn2X_MouseLeave" Visibility="Hidden" Click="btn2X_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3X" HorizontalAlignment="Left" Margin="480,325,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3X_MouseEnter" MouseLeave="btn3X_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/х.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Ц-->
+        <Button Click="btn1CC_Click" Name="btn1СС" HorizontalAlignment="Left" Margin="535,390,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1СС_MouseEnter" MouseLeave="btn1СС_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2СС" HorizontalAlignment="Left" Margin="535,325,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2СС_MouseEnter" MouseLeave="btn2СС_MouseLeave" Visibility="Hidden" Click="btn2СС_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3СС" HorizontalAlignment="Left" Margin="585,325,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3СС_MouseEnter" MouseLeave="btn3СС_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/ц.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Ч-->
+        <Button Click="btn1CH_Click" Name="btn1СH" HorizontalAlignment="Left" Margin="10,495,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1СH_MouseEnter" MouseLeave="btn1СH_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2СH" HorizontalAlignment="Left" Margin="10,430,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2СH_MouseEnter" MouseLeave="btn2СH_MouseLeave" Visibility="Hidden" Click="btn2СH_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3СH" HorizontalAlignment="Left" Margin="60,430,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3СH_MouseEnter" MouseLeave="btn3СH_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/ч.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Ш-->
+        <Button Click="btn1SH_Click" Name="btn1SH" HorizontalAlignment="Left" Margin="115,495,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1SH_MouseEnter" MouseLeave="btn1SH_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2SH" HorizontalAlignment="Left" Margin="115,430,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2SH_MouseEnter" MouseLeave="btn2SH_MouseLeave" Visibility="Hidden" Click="btn2SH_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3SH" HorizontalAlignment="Left" Margin="165,430,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3SH_MouseEnter" MouseLeave="btn3SH_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/ш.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Щ-->
+        <Button Click="btn1SHH_Click" Name="btn1SHH" HorizontalAlignment="Left" Margin="220,495,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1SHH_MouseEnter" MouseLeave="btn1SHH_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2SHH" HorizontalAlignment="Left" Margin="220,430,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2SHH_MouseEnter" MouseLeave="btn2SHH_MouseLeave" Visibility="Hidden" Click="btn2SHH_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3SHH" HorizontalAlignment="Left" Margin="270,430,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3SHH_MouseEnter" MouseLeave="btn3SHH_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/щ.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Ъ-->
+        <Button Click="btn1TV_Click" Name="btn1TV" HorizontalAlignment="Left" Margin="325,495,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1TV_MouseEnter" MouseLeave="btn1TV_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2TV" HorizontalAlignment="Left" Margin="325,430,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2TV_MouseEnter" MouseLeave="btn2TV_MouseLeave" Visibility="Hidden" Click="btn2TV_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3TV" HorizontalAlignment="Left" Margin="375,430,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3TV_MouseEnter" MouseLeave="btn3TV_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/ъ.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Ы-->
+        <Button Click="btn1BL_Click" Name="btn1BL" HorizontalAlignment="Left" Margin="430,495,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1BL_MouseEnter" MouseLeave="btn1BL_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2BL" HorizontalAlignment="Left" Margin="430,430,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2BL_MouseEnter" MouseLeave="btn2BL_MouseLeave" Visibility="Hidden" Click="btn2BL_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3BL" HorizontalAlignment="Left" Margin="480,430,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3BL_MouseEnter" MouseLeave="btn3BL_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/ы.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Ь-->
+        <Button Click="btn1MYA_Click" Name="btn1MYA" HorizontalAlignment="Left" Margin="535,495,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1MYA_MouseEnter" MouseLeave="btn1MYA_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2MYA" HorizontalAlignment="Left" Margin="535,430,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2MYA_MouseEnter" MouseLeave="btn2MYA_MouseLeave" Visibility="Hidden" Click="btn2MYA_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3MYA" HorizontalAlignment="Left" Margin="585,430,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3MYA_MouseEnter" MouseLeave="btn3MYA_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/ь.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Э-->
+        <Button Click="btn1EEE_Click" Name="btn1EEE" HorizontalAlignment="Left" Margin="10,600,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1EEE_MouseEnter" MouseLeave="btn1EEE_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2EEE" HorizontalAlignment="Left" Margin="10,535,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2EEE_MouseEnter" MouseLeave="btn2EEE_MouseLeave" Visibility="Hidden" Click="btn2EEE_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3EEE" HorizontalAlignment="Left" Margin="60,535,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3EEE_MouseEnter" MouseLeave="btn3EEE_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/э.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Ю-->
+        <Button Click="btn1YU_Click" Name="btn1YU" HorizontalAlignment="Left" Margin="115,600,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1YU_MouseEnter" MouseLeave="btn1YU_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2YU" HorizontalAlignment="Left" Margin="115,535,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2YU_MouseEnter" MouseLeave="btn2YU_MouseLeave" Visibility="Hidden" Click="btn2YU_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3YU" HorizontalAlignment="Left" Margin="165,535,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3YU_MouseEnter" MouseLeave="btn3YU_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/ю.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+        <!--Буква Я-->
+        <Button Click="btn1YA_Click" Name="btn1YA" HorizontalAlignment="Left" Margin="220,600,0,0" VerticalAlignment="Top" Width="100" Height="35" Background="#00DDDDDD" MouseEnter="btn1YA_MouseEnter" MouseLeave="btn1YA_MouseLeave" Visibility="Hidden">
+            <Image Source="icons/gamepad.png"/>
+        </Button>
+        <Button Name="btn2YA" HorizontalAlignment="Left" Margin="220,535,0,0" VerticalAlignment="Top" Width="49" Background="#00DDDDDD" Height="64" MouseEnter="btn2YA_MouseEnter" MouseLeave="btn2YA_MouseLeave" Visibility="Hidden" Click="btn2YA_Click">
+            <Image Source="icons/sound.png"/>
+        </Button>
+        <Button Name="btn3YA" HorizontalAlignment="Left" Margin="270,535,0,0" VerticalAlignment="Top" Width="50"  Background="#00DDDDDD" Height="64" MouseEnter="btn3YA_MouseEnter" MouseLeave="btn3YA_MouseLeave" Visibility="Hidden">
+            <Button.ToolTip>
+                <ToolTip>
+                    <Image Source="info/я.png"/>
+                </ToolTip>
+            </Button.ToolTip>
+            <Image Source="icons/info.png"/>
+        </Button>
+    </Grid>
+</Page>
